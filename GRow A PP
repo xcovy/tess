@@ -1,0 +1,20 @@
+local x = require(game:GetService("ReplicatedStorage").Data.EventShopData)
+
+local function notify(title, text)
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = title,
+        Text = text,
+        Duration = 2.5
+    })
+end
+
+notify("🍬 Candy Chances", ("Candy Blossom Stock Chance: %s%%"):format(x["Candy Blossom"].StockChance))
+notify("📦 Crate Chances", ("Mysterious Crate Stock Chance: %s%%"):format(x["Mysterious Crate"].StockChance))
+notify("🌱 Seed Pack Chances", ("Night Seed Pack Stock Chance: %s%%"):format(x["Night Seed Pack"].StockChance))
+notify("🥚 Night Egg Chances", ("Night Egg Stock Chance: %s%%"):format(x["Night Egg"].StockChance))
+notify("🍌 Blood Banana Chances", ("Blood Banana Stock Chance: %s%%"):format(x["Blood Banana"].StockChance))
+notify("🍉 Moon Melon Chances", ("Moon Melon Stock Chance: %s%%"):format(x["Moon Melon"].StockChance))
+notify("🌟 Star Caller Chances", ("Star Caller Stock Chance: %s%%"):format(x["Star Caller"].StockChance))
+notify("🦉 Blood Owl Chances", ("Blood Owl Stock Chance: %s%%"):format(x["Blood Owl"].StockChance))
+notify("🥝 Blood Kiwi Chances", ("Blood Kiwi Stock Chance: %s%%"):format(x["Blood Kiwi"].StockChance))
+notify("🦔 Blood Hedgehog Chances", ("Blood Hedgehog Stock Chance: %s%%"):format(x["Blood Hedgehog"].StockChance))
